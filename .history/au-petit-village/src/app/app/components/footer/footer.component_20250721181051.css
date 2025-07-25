@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubbleboddy&family=Comfortaa&display=swap');
+
+h1, h2, h3 {
+  font-family: 'Bubbleboddy', cursive;
+}
+
+p {
+  font-family: 'Comfortaa', cursive;
+}
+.site-footer {
+  background-color: #151217;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 50px;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(100%);
+  transition: filter 0.3s ease;
+}
+
+.social-icons a:hover img {
+  filter: brightness(70%);
+  cursor: pointer;
+}

@@ -1,0 +1,30 @@
+<div class="home-container">
+<h1>Bienvenue Au Petit Village</h1>
+<p>Nous créons des figurines d'Astérix et Obélix.</p>
+
+<input type="text" [(ngModel)]="searchTerm" placeholder="Rechercher un produit..." />
+
+<select [(ngModel)]="sortOption">
+  <option value="none">-- Trier par --</option>
+  <option value="priceAsc">Prix croissant</option>
+  <option value="priceDesc">Prix décroissant</option>
+  <option value="alpha">Ordre alphabétique</option>
+</select>
+
+<div *ngFor="let product of filteredProducts" class="product-item" (click)="openModal(product)" style="cursor: pointer;">
+  <img [src]="product.imageUrl" [alt]="product.name" />
+  <h2>{{ product.name }}</h2>
+  <p>Prix : {{ product.price }} €</p>
+</div>
+
+<div class="modal" *ngIf="selectedProduct">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <h2>{{ selectedProduct.name }}</h2>
+    <img [src]="selectedProduct.imageUrl" [alt]="selectedProduct.name" style="max-width: 200px;" />
+    <p>{{ selectedProduct.description }}</p>
+    <p>Prix : {{ selectedProduct.price }} €</p>
+    <button>Ajouter au panier</button>
+  </div>
+</div>
+</div>

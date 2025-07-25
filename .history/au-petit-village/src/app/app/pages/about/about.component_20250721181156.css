@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubbleboddy&family=Comfortaa&display=swap');
+
+h1, h2, h3 {
+  font-family: 'Bubbleboddy', cursive;
+}
+
+p {
+  font-family: 'Comfortaa', cursive;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+  background-color: #F9D0A3;
+  color: #333;
+}
+
+.about-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #DA001E;
+  text-align: center;
+  border-bottom: 3px solid #DA001E;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  text-align: justify;
+  background-color: #F9D0A3;
+  padding: 20px;
+  border-left: 4px solid #DA001E;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+  .about-container h1 {
+    font-size: 2rem;
+  }
+
+  .about-container p {
+    font-size: 1rem;
+    padding: 15px;
+  }
+}
